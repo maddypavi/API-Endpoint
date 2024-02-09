@@ -1,0 +1,66 @@
+# default:
+#   ENGINE: django.db.backends.postgresql
+#   NAME: onecare
+#   USER: postgres
+#   PASSWORD: admin
+#   HOST: localhost
+#   PORT: 5432
+
+# develop:
+#   ENGINE: django.db.backends.postgresql
+#   NAME: onecare_postgres_develop
+#   USER: postgres
+#   PASSWORD: admin
+#   HOST: localhost
+#   PORT: 5432
+
+# test:
+#   ENGINE: django.db.backends.postgresql
+#   NAME: onecare_postgres_test
+#   USER: postgres
+#   PASSWORD: admin
+#   HOST: localhost
+#   PORT: 5432
+
+# Services
+
+# default:
+#   ENGINE: django.db.backends.postgresql
+#   NAME: onecare
+#   USER: postgres
+#   PASSWORD: admin
+#   HOST: localhost
+#   PORT: 5432
+
+# dummy:
+#   ENGINE: django.db.backends.postgresql
+#   NAME: onecare_dummy
+#   USER: postgres
+#   PASSWORD: admin
+#   HOST: localhost
+#   PORT: 5432
+
+
+# common:
+#   ENGINE: django.db.backends.postgresql
+#   NAME: onecare_common
+#   USER: postgres
+#   PASSWORD: admin
+#   HOST: localhost
+#   PORT: 5432
+
+
+
+default:
+  ENGINE: django.db.backends.sqlite3
+  NAME: onecare.db
+  
+
+dummy:
+  ENGINE: django.db.backends.sqlite3
+  NAME: onecare_dummy.db
+
+
+rpm_service:
+  ENGINE: django.db.backends.sqlite3
+  NAME: onecare_rpm_service.db

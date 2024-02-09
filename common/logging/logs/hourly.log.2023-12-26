@@ -1,0 +1,73 @@
+2023-12-26 19:28:03,014 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\views.py changed, reloading.
+2023-12-26 19:28:52,750 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\urls.py changed, reloading.
+2023-12-26 19:29:09,587 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\core\urls.py changed, reloading.
+2023-12-26 19:29:20,243 - WARNING - Not Found: /pytest-report/
+2023-12-26 19:31:06,536 - WARNING - Not Found: /test-reports/coverage-report/style.css
+2023-12-26 19:31:06,555 - WARNING - Not Found: /test-reports/coverage-report/coverage_html.js
+2023-12-26 19:31:06,589 - WARNING - Not Found: /test-reports/coverage-report/keybd_closed.png
+2023-12-26 19:31:07,018 - WARNING - Not Found: /test-reports/coverage-report/favicon_32.png
+2023-12-26 19:31:18,921 - WARNING - Not Found: /test-reports/coverage-report/d_ae694f6b64b831b1_models_py.html
+2023-12-26 19:31:32,764 - WARNING - Not Found: /test-reports/coverage-report/d_28b9f43ab8a11dd5_HttpClient_py.html
+2023-12-26 19:32:59,079 - ERROR - Internal Server Error: /test-reports/coverage-report/
+Traceback (most recent call last):
+  File "C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\views.py", line 21, in coverage_report
+    return render(request, "index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+2023-12-26 19:33:43,957 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:33:44,100 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:33:44,258 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:33:46,221 - WARNING - Not Found: /dummy/authors/7/
+2023-12-26 19:33:47,627 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:33:47,774 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:33:47,916 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:33:49,662 - WARNING - Not Found: /dummy/books/7/
+2023-12-26 19:34:02,897 - WARNING - Not Found: /pytest-report
+2023-12-26 19:34:06,349 - WARNING - Not Found: /pytest-report
+2023-12-26 19:34:59,902 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\core\urls.py changed, reloading.
+2023-12-26 19:35:16,420 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\urls.py changed, reloading.
+2023-12-26 19:35:55,165 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:35:55,331 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:35:55,488 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:35:57,802 - WARNING - Not Found: /dummy/authors/7/
+2023-12-26 19:35:58,956 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:35:59,176 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:35:59,357 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:36:01,599 - WARNING - Not Found: /dummy/books/7/
+2023-12-26 19:37:13,861 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:37:14,001 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:37:14,160 - WARNING - Bad Request: /dummy/authors/
+2023-12-26 19:37:16,231 - WARNING - Not Found: /dummy/authors/7/
+2023-12-26 19:37:17,617 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:37:17,766 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:37:17,913 - WARNING - Bad Request: /dummy/books/
+2023-12-26 19:37:19,874 - WARNING - Not Found: /dummy/books/7/
+2023-12-26 19:37:41,414 - WARNING - Not Found: /test-reports/pytest-report/
+2023-12-26 19:39:26,333 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\utils.py changed, reloading.
+2023-12-26 19:39:39,583 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\views.py changed, reloading.
+2023-12-26 19:39:49,717 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\views.py changed, reloading.
+2023-12-26 19:40:04,996 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\urls.py changed, reloading.
+2023-12-26 19:40:30,196 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\views.py changed, reloading.
+2023-12-26 19:40:50,726 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\utils.py changed, reloading.
+2023-12-26 19:41:34,992 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\utils.py changed, reloading.
+2023-12-26 19:41:48,083 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\utils.py changed, reloading.
+2023-12-26 19:42:39,050 - INFO - C:\Users\AlbinAnthony\Desktop\Projects\Code_Optimization_And_Testing\OneCare-Demo\src\test_report\utils.py changed, reloading.
+2023-12-26 19:42:53,969 - WARNING - Not Found: /test-reports/pytest-report/
+2023-12-26 19:43:08,408 - WARNING - Not Found: /test-reports/pytest-report/

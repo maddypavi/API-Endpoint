@@ -1,0 +1,3 @@
+from rpm_service.views.Device import DeviceViewSet
+from rpm_service.views.DeviceProvider import DeviceProviderViewSet
+from rpm_service.views.ConnectivityType import ConnectivityTypeViewSet

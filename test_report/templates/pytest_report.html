@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">OneCare Test-Report</h1>
+    <div class="container mt-4">
+        <div class="row justify-content-between align-items-center">
+            <h4 class="col-md-6"><em>Test Score - {{ grade }} - {{ created }}</em></h4>
+            <a href="javascript:history.go(-1)" class="btn btn-primary col-md-2 float-md-right">Back</a>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 mt-5 bg-white rounded">
+        <h1 class="text-center">Test Report</h1>
+        <div class="row">
+            {% for attribute, value in report.items %}
+            {% if value %}
+            <div class="col-md-3">
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <h3>{{ attribute }}</h3>
+                    <h6>{{ value }}</h6>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="mt-4 shadow p-3 mb-5 bg-white rounded">
+        <h1 class="text-center">Coverage Report</h1>
+        <div class="row">
+            {% for attribute, value in coverage.items %}
+            {% if value %}
+            <div class="col-md-3">
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <h3>{{ attribute }}</h3>
+                    <h6>{{ value }}</h6>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

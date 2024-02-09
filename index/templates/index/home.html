@@ -1,0 +1,429 @@
+{% extends 'index/base.html' %}
+
+{% block content %}
+<style>
+  li {
+    font-weight: bold;
+  }
+</style>
+<section class="section">
+  <h1 class="display-4 font text-center">OneCare Developers Portal</h1>
+
+  <div class="contatiner">
+    <div class="container shadow">
+      <p class="m-2 p-2" style="font-size: larger;">
+        <strong>
+          The OneCare Developers Portal serves as a comprehensive guide to Python coding standards, designed to
+          elevate the quality and consistency of code across OneCare project. These standards embody industry best
+          practices,
+          emphasizing readability, maintainability, and collaboration among developers. By adhering to these guidelines,
+          developers contribute to a codebase that is not only robust and error-resistant but also scalable for future
+          enhancements and modifications.
+        </strong>
+      </p>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <!-- Creating a Project -->
+    <div class="card">
+      <div class="card-header text-center">
+        <h3>Creating a Project</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Name your directory same as your project name.</li>
+          <li class="list-group-item">Initialize virtual environment for each project.</li>
+          <li class="list-group-item">Include a <code>README.md</code> file for project details.</li>
+          <li class="list-group-item">Maintain a <code>requirements.txt</code> file for Python dependencies (use
+            <code>pip freeze > requirements.txt</code>).
+          </li>
+          <li class="list-group-item">Initialize git before starting coding; update changes in git.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Directory Structure -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Directory Structure</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Each service with similar modules should have its own directory (e.g., methods,
+            mappings, models, utils).</li>
+          <li class="list-group-item">Directories should be named in lowercase.</li>
+          <li class="list-group-item">Use a single word for naming directories wherever possible.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Starting a Project -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Starting a Project</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Have only one entry point: <code>app.py</code> or <code>main.py</code>.</li>
+          <li class="list-group-item">Entry file should be minimal; contains a <code>main()</code> function with no
+            parameters.</li>
+          <li class="list-group-item"><code>main()</code> initializes classes and invokes functions/methods.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- File Structure -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>File Structure</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Organize modules; group similar functions into modules.</li>
+          <li class="list-group-item">Group similar modules into packages.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Imports -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Imports</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Differentiate imports as in-built, third-party, and custom.</li>
+          <li class="list-group-item">Avoid importing everything using <code>*</code>.</li>
+          <li class="list-group-item">Avoid overusing aliasing; use it only when necessary.</li>
+          <li class="list-group-item">Mind imports to prevent circular imports.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Spacing & Indentation -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Spacing & Indentation</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Use four spaces for indentation; tabs not recommended.</li>
+          <li class="list-group-item">Separate import groups with a new line.</li>
+          <li class="list-group-item">Separate outer-level objects (classes, functions) with two newline spaces.</li>
+          <li class="list-group-item">Separate methods/functions in classes with one newline space.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Variables -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Variables</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Avoid modifying global variables.</li>
+          <li class="list-group-item">Global variables (CONSTANTS) should be uppercase.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Naming Conventions -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Naming Conventions</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Use snake_case for variables, PascalCase for classes.</li>
+          <li class="list-group-item">Global variables (CONSTANTS) should be uppercase.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Length -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Length</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Limit each line to 80 characters, including newline characters.</li>
+          <li class="list-group-item">If code exceeds the line, use a backslash or parentheses to continue.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Conditions -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Conditions</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">No need to explicitly check if a condition is True.</li>
+          <li class="list-group-item">Limit nesting to two levels.</li>
+          <li class="list-group-item">Use Guard Clause technique to reduce nesting.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Loops -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Loops</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Avoid nested loops.</li>
+          <li class="list-group-item">Use <code>break</code> or <code>continue</code> appropriately.</li>
+          <li class="list-group-item">Avoid nested comprehensions; use generators.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cohesion and Coupling -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Cohesion and Coupling</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Ensure functions are highly coherent (do one thing).</li>
+          <li class="list-group-item">Reduce coupling; minimize dependencies.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Exceptions -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Exceptions</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Avoid catching generic exceptions.</li>
+          <li class="list-group-item">Catch specific exceptions; handle separately.</li>
+          <li class="list-group-item">Use custom exceptions with meaningful messages.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Docstring, Comments, and Type Hints -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Docstring, Comments, and Type Hints</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Add docstrings for all functions and classes.</li>
+          <li class="list-group-item">Add comments sparingly.</li>
+          <li class="list-group-item">Use type hints for parameters and returns.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Git -->
+    <div class="card mt-4 shadow rounded">
+      <div class="card-header text-center">
+        <h3>Git</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Create a branch for each tasks.</li>
+          <li class="list-group-item">Avoid working on the main branch.</li>
+          <li class="list-group-item">Include initials in branch names.</li>
+          <li class="list-group-item">Pull before commit or merge.</li>
+          <li class="list-group-item">Prefer cherry-pick over merge.</li>
+          <li class="list-group-item">Push code daily.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Testing Standards -->
+    <h2 class="mt-5 text-center">Testing Standards</h2>
+    <div class="card-body">
+      <!-- Test Organization -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Test Organization</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Maintain a "tests" directory.</li>
+            <li class="list-group-item">Organize tests by API endpoint structure.</li>
+            <li class="list-group-item">Test should be named after its testing entity</li>
+            <li class="list-group-item">i.e, (test_book_model -> BookModel) or (test_author_serializer ->
+              AuthorSerializer)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Test Cases -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Test Cases</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Name test functions descriptively in snake_case.</li>
+            <li class="list-group-item">Include positive and negative tests.</li>
+            <li class="list-group-item">Consider edge cases and extreme input values.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Test Setup -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Test Setup</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Use mocking for external dependencies.</li>
+            <li class="list-group-item">Configure a separate testing environment or use fixtures.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Setup and Teardown -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Setup and Teardown</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Use fixtures for setup and teardown procedures.</li>
+            <li class="list-group-item">Leverage fixtures for a consistent test environment.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Test Execution -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Test Execution</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Automate tests using frameworks like pytest.</li>
+            <li class="list-group-item">Ensure test cases can run independently.</li>
+            <li class="list-group-item">Include relevant assertions for response validation.</li>
+            <li class="list-group-item">Log execution details for debugging.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Data Management -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Data Management</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Manage test data separately from production data.</li>
+            <li class="list-group-item">Implement cleanup mechanisms after test execution.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Reporting -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Reporting</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Generate test reports for each run.</li>
+            <li class="list-group-item">Document the purpose and outcome of each test.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Continuous Integration -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Continuous Integration</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Integrate API tests into CI/CD pipelines.</li>
+            <li class="list-group-item">Set up notifications for test failures.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Security</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Include tests for input validation.</li>
+            <li class="list-group-item">Validate proper authorization mechanisms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Performance Testing -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Performance Testing</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Consider load testing for varying loads.</li>
+            <li class="list-group-item">Measure and validate response times.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Versioning -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Versioning</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Test compatibility with different API versions.</li>
+            <li class="list-group-item">Include tests for deprecated endpoints.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Documentation -->
+      <div class="card mt-4 shadow rounded">
+        <div class="card-header text-center">
+          <h3>Documentation</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Document testing strategy for each endpoint.</li>
+            <li class="list-group-item">Add comments in the code for clarity.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.card-header').each(function () {
+      var cardBody = $(this).next('.card-body');
+      if (!$(this).hasClass('show')) {
+        cardBody.removeClass('show');
+        cardBody.addClass('collapse');
+      }
+    });
+
+    $('.card-header').click(function () {
+      $(this).next('.card-body').slideToggle();
+    });
+  });
+</script>
+{% endblock content %}
